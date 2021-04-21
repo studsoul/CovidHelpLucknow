@@ -46,6 +46,22 @@ menu ul li{
     background-color: gray;
     color:#f4f4f4;
 }
+@media screen and (min-width: 480px) {
+.main .covid-data {
+    padding:1em;
+    background-color: #f4f4f4;
+    display: block;
+    text-align:center;
+}
+.cv_data{
+    padding:1em;
+    margin:0.5em;
+    border-radius: 5%;
+    color:#ff9090;
+    font-family: sans-serif;
+    width:5em;
+}
+}
 footer{
     text-align: center;
 }
