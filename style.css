@@ -51,7 +51,6 @@ menu ul li{
     padding:2em;
     background-color: #f4f4f4;
     display: block;
-    justify-content: center;
     text-align:center;
 }
 .cv_data{
@@ -61,7 +60,12 @@ menu ul li{
     color:#ff9090;
     font-family: sans-serif;
     width:10em;
+    text-align:center;
 }
+    .helpline_tab{
+    display: block;
+}
+.help{padding:2.5em;}
 }
 footer{
     text-align: center;
