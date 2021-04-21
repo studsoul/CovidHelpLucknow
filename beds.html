@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Covid19 Lucknow Help</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body onload="covid19data()">
+    <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="index.html">COVID19 HELP Lucknow</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-menubuilder">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="medicines.html">Medicines</a></li>
+                    <li class="nav-item"><a href="beds.html">Beds</a></li>
+                    <li class="nav-item"><a href="plasma.html">Plasma</a></li>
+                    <li class="nav-item"><a href="oxygen.html">Oxygen</a></li>
+                    <li class="nav-item"><a href="ambulance.html">Ambulance</a></li>
+                    <li class="nav-item"><a href="#">More</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="main">
+        <div class="covid-data">
+     <h2>Beds (Hospital)</h2>
+    </div>
+    </div>
+    <div class="help">
+        <div class="form-group">
+            <input class="form-control input-lg" id="inputlg" type="text" placeholder="Search for Remdesivir and other medicines" id="search_term" onkeyup="covidhelp()">
+          </div>
+        <div class="table-responsive">
+            <table id="covidhelp" class="table table-bordered table-condensed">
+                <tbody>
+                <tr>
+                <td style="width: 205px;">Advanced Neuro and General Hospital (ANGH)</td>
+                <td style="width: 93px;">9415022002</td>
+                <td style="width: 252px;">ARJUNGANJ, LUCKNOW<br />Uttar Pradesh</td>
+                </tr>
+                <tr>
+                <td style="width: 205px;">Pooja Hospital and Multispeciality Center</td>
+                <td style="width: 93px;">9670588871</td>
+                <td style="width: 252px;">Jankipuram, Lucknow</td>
+                </tr>
+                <tr>
+                <td style="width: 205px;">Rajdhani Hospital</td>
+                <td style="width: 93px;">9415162686</td>
+                <td style="width: 252px;">Amrapali, Near Railway Line, Raebareilly Road, Lucknow</td>
+                </tr>
+                <tr>
+                <td style="width: 205px;">Sanjeevani Medical Centre</td>
+                <td style="width: 93px;">8840466030</td>
+                <td style="width: 252px;">Nakkhas Road, Lucknow - 226003, Uttar Pradesh</td>
+                </tr>
+                <tr>
+                <td style="width: 205px;">Sunrise hospital</td>
+                <td style="width: 93px;">9648845777</td>
+                <td style="width: 252px;">Nirala Nagar Lucknow</td>
+                </tr>
+                <tr>
+                <td style="width: 205px;">Vaga Hospital</td>
+                <td style="width: 93px;">9839165078</td>
+                <td style="width: 252px;">KS-14 Aliganj Housing scheme Sitapur Road, Lucknow - 226030</td>
+                </tr>
+                <tr>
+                <td class="s19" dir="ltr" style="width: 205px;">Dr. RML Hospital (Lohia Hospital)</td>
+                <td class="s19" dir="ltr" style="width: 93px;">9454416497</td>
+                <td style="width: 252px;">Vibhuti Khand, Gomti Nagar Lucknow.</td>
+                </tr>
+                <tr>
+                <td class="s19" dir="ltr" style="width: 205px;">Sahara Hospital</td>
+                <td style="width: 93px;">8377022087</td>
+                <td style="width: 252px;">Gomti Nagar, Lucknow</td>
+                </tr>
+                <tr>
+                <td class="s19" dir="ltr" style="width: 205px;">Vivekanand Hospital</td>
+                <td style="width: 93px;">9415005008</td>
+                <td style="width: 252px;">Near IT College Fly Over, Lucknow, Uttar Pradesh - 226007</td>
+                </tr>
+                <tr>
+                <td class="s19" dir="ltr" style="width: 205px;">Ma Chandrika Hospital</td>
+                <td class="s19" dir="ltr" style="width: 93px;">9454416508</td>
+                <td style="width: 252px;">Bargadi, Bakshi Ka Talab, Lucknow</td>
+                </tr>
+                </tbody>
+                </table>
+                <p><a href="https://i.imgur.com/5j96XSf.png">List of UPGov Hospitals</a></p></div></div>                
+    </div>
+    <footer>
+        <p>Covid19 Lucknow Help - <a href="https://twitter.com/w3Abhishek"><strong>@w3Abhishek</strong></a></p>
+        <p><strong>Disclaimer</strong>: Information collected from public platforms like Twitter, Reddit etc.</p>
+    </footer>
+</body>
+</html>

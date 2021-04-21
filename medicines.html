@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Covid19 Lucknow Help</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body onload="covid19data()">
+
+    <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="index.html">COVID19 HELP Lucknow</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-menubuilder">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="medicines.html">Medicines</a></li>
+                    <li class="nav-item"><a href="beds.html">Beds</a></li>
+                    <li class="nav-item"><a href="plasma.html">Plasma</a></li>
+                    <li class="nav-item"><a href="oxygen.html">Oxygen</a></li>
+                    <li class="nav-item"><a href="ambulance.html">Ambulance</a></li>
+                    <li class="nav-item"><a href="#">More</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+
+    <div class="main">
+        <div class="covid-data">
+            <div class="container-fluid" style="text-align: center; padding:2em;">
+                <h2>Medicines (Remdesivir, Tocilizumab etc.)</h2>
+              </div>
+     
+    </div>
+    </div>
+    <div class="help">
+        <div class="form-group">
+            <input class="form-control input-lg" id="inputlg" type="text" placeholder="Search for Remdesivir and other medicines" id="search_term" onkeyup="covidhelp()">
+          </div>
+        <div class="table-responsive">
+        <table style="border-collapse: collapse; width: 100%;" border="1">
+            <tbody>
+            <tr>
+            </tbody></table>
+            <div class="table-condensed">
+                <table class="table table-bordered table-condensed" id="covidhelp">
+                    <tbody>
+                        <tr>
+                            <td>Remdesivir - Cipla</td>
+                            <td>+91-8657311088, 022-6282 0886</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Remdesivir - D.N Associates</td>
+                            <td>9839063042, 9919777737</td>
+                            <td>SUGNAMAL MARKET, 1 FLOOR SHOP No. 839, AMINABAD, LUCKNOW - 226018</td>
+                        </tr>
+                        <tr>
+                            <td>Remdesivir - SHAKUN SALES PVT. LTD.</td>
+                            <td>0522 - 2382494</td>
+                            <td>29-30, GOLE MARKET, MAHANAGAR, LUCKNOW - 226020</td>
+                        </tr>
+                        <tr>
+                            <td>Remdesivir - SHREE HARI ENTERPRISES</td>
+                            <td>9619514067</td>
+                            <td>VRINDAVAN YOJNA, RBL ROAD, LUCKNOW - 226025</td>
+
+                        </tr>
+                        <tr>
+                            <td>Remdesivir - ARNOVA HEALTHCARE</td>
+                            <td>9920590070</td>
+                            <td>SECTOR M, LDA COLONY, ASHIYANA, LUCKNOW - 226012</td>
+                            <!-- <td><span>&nbsp;</span></td> -->
+                        </tr>
+                        <tr>
+                            <td>Remdesivir - NAVAL MEDICALS</td>
+                            <td>9415953301</td>
+                            <td>SHOP NO. 4, MADHU PALACE, NEAR SGPGIMS, LUCKNOW - 226014</td>
+                            <!-- <td><span>&nbsp;</span></td> -->
+                        </tr>
+                        <tr>
+                            <td>Fabiflu - ALBINO LIFESCIENCES PVT. LTD. LUCKNOW</td>
+                            <td>8800019190, 8800019219</td>
+                            <td>Shalimar Tower, TC 57, 2nd Floor, Vibhuti Khand, Gomti Nagar, Lucknow - 226010</td>
+                            <!-- <td><span>&nbsp;</span></td> -->
+                        </tr>
+                        <tr>
+                            <td>Remdesivir - 100mg (Hetero), 200mg(Cipla)</td>
+                            <td>9406910131</td>
+                            <td><span>&nbsp;</span></td>
+                            <!-- <td>100mg (Hetero), 200mg(Cipla)</td> -->
+                        </tr>
+                        <tr>
+                            <td>Remdesivir - Era Medicals</td>
+                            <td>9140640319, 7007806869</td>
+                            <td><span>Dubagga</span></td>
+                            <!-- <td>100mg (Hetero), 200mg(Cipla)</td> -->
+                        </tr>
+                        <tr>
+                            <td>Remdesivir - Sudha Medicals</td>
+                            <td>9369575344</td>
+                            <td><span>Aliganj, Lucknow</span></td>
+                            <!-- <td>100mg (Hetero), 200mg(Cipla)</td> -->
+                        </tr>
+                        <tr>
+                            <td>Remdesivir - Sumit Pharma</td>
+                            <td>9415021037</td>
+                            <td><span>Naka Hindola, Lucknow</span></td>
+                            <!-- <td>100mg (Hetero), 200mg(Cipla)</td> -->
+                        </tr>
+                        <tr>
+                            <td>Remdesivir - Upkar Shakun Medical</td>
+                            <td>9452335457</td>
+                            <td><span>Address Unknown</span></td>
+                            <!-- <td>100mg (Hetero), 200mg(Cipla)</td> -->
+                        </tr>
+                        <tr>
+                            <td>Remdesivir - Lucknow</td>
+                            <td>9151266066</td>
+                            <td><span>Lucknow</span></td>
+                            <!-- <td>100mg (Hetero), 200mg(Cipla)</td> -->
+                        </tr>
+                    </tbody>
+                </table></div></div>                
+    </div>
+
+    <footer style="text-align: center;">
+        <p>Covid19 Lucknow Help - <a href="https://twitter.com/w3Abhishek"><strong>@w3Abhishek</strong></a></p>
+        <p><strong>Disclaimer</strong>: Information collected from public platforms like Twitter, Reddit etc.</p>
+    </footer>
+</body>
+</html>
