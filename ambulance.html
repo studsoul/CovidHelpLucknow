@@ -1,102 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Covid19 Lucknow Help</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body onload="covid19data()">
-    <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header"><a class="navbar-brand" href="index.html">COVID19 HELP Lucknow</a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse navbar-menubuilder">
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="medicines.html">Medicines</a></li>
-                    <li class="nav-item"><a href="beds.html">Beds</a></li>
-                    <li class="nav-item"><a href="plasma.html">Plasma</a></li>
-                    <li class="nav-item"><a href="oxygen.html">Oxygen</a></li>
-                    <li class="nav-item"><a href="ambulance.html">Ambulance</a></li>
-                    <li class="nav-item"><a href="#">More</a></li>
-                </ul>
-            </div>
+  </head>
+  <body onload="covid19data()">
+    <div id="custom-bootstrap-menu" class="navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">COVID19 HELP Lucknow</a>
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-menubuilder"
+          >
+            <span class="sr-only">Toggle navigation</span
+            ><span class="icon-bar"></span><span class="icon-bar"></span
+            ><span class="icon-bar"></span>
+          </button>
         </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="medicines.html">Medicines</a></li>
+            <li class="nav-item"><a href="beds.html">Beds</a></li>
+            <li class="nav-item"><a href="plasma.html">Plasma</a></li>
+            <li class="nav-item"><a href="oxygen.html">Oxygen</a></li>
+            <li class="nav-item"><a href="ambulance.html">Ambulance</a></li>
+            <li class="nav-item"><a href="#">More</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- Navbar -->
     <div class="main">
-        <div class="covid-data">
-     <h2>Ambulance</h2>
-    </div>
+      <div class="covid-data">
+        <h2>Ambulance</h2>
+      </div>
     </div>
     <div class="help">
-        <!-- <div class="form-group">
+      <!-- <div class="form-group">
             <input class="form-control input-lg" id="inputlg" type="text" placeholder="Search " id="search_term" onkeyup="covidhelp()">
           </div> -->
-        <div class="table-responsive">
-        <table style="border-collapse: collapse; width: 100%;" border="1">
+      <div class="table-responsive">
+        <table style="border-collapse: collapse; width: 100%" border="1">
+          <tbody>
+            <tr></tr>
+          </tbody>
+        </table>
+        <div class="table-condensed">
+          <table class="table table-bordered table-condensed" id="covidhelp">
             <tbody>
-            <tr>
-            </tbody></table>
-            <div class="table-condensed">
-                <table class="table table-bordered table-condensed" id="covidhelp">
-                    <tbody>
-                        <tr>
-                            <td>Shiv Foundation</td>
-                            <td>9807860146</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Kishan Singh Ambulance</td>
-                            <td>6386048146</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Harpreet Private Ambulance</td>
-                            <td>9415065431</td>
-                            <td></td>
-
-                        </tr>
-                        <tr>
-                            <td>Ambulance</td>
-                            <td>8052623767</td>
-                            <td></td>
-                            <!-- <td><span>&nbsp;</span></td> -->
-                        </tr>
-                        <tr>
-                            <td>Sandeep</td>
-                            <td>9554963893</td>
-                            <td></td>
-                            <!-- <td><span>&nbsp;</span></td> -->
-                        </tr>
-                        <tr>
-                            <td>Elite Ambulance</td>
-                            <td>7985771108</td>
-                            <td></td>
-                            <!-- <td><span>&nbsp;</span></td> -->
-                        </tr>
-                        <tr>
-                            <td>Gajraj ambulance</td>
-                            <td>7007810218</td>
-                            <td><span>&nbsp;</span></td>
-                            <!-- <td>100mg (Hetero), 200mg(Cipla)</td> -->
-                        </tr>
-                    </tbody>
-                </table></div></div>                
+              <tr>
+                <td>Shiv Foundation</td>
+                <td>9807860146</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Kishan Singh Ambulance</td>
+                <td>6386048146</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Harpreet Private Ambulance</td>
+                <td>9415065431</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Ambulance</td>
+                <td>8052623767</td>
+                <td></td>
+                <!-- <td><span>&nbsp;</span></td> -->
+              </tr>
+              <tr>
+                <td>Sandeep</td>
+                <td>9554963893</td>
+                <td></td>
+                <!-- <td><span>&nbsp;</span></td> -->
+              </tr>
+              <tr>
+                <td>Elite Ambulance</td>
+                <td>7985771108</td>
+                <td></td>
+                <!-- <td><span>&nbsp;</span></td> -->
+              </tr>
+              <tr>
+                <td>Gajraj ambulance</td>
+                <td>7007810218</td>
+                <td><span>&nbsp;</span></td>
+                <!-- <td>100mg (Hetero), 200mg(Cipla)</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <!-- Notes	-->
     <footer>
-        <p>Covid19 Lucknow Help - <a href="https://twitter.com/w3Abhishek"><strong>@w3Abhishek</strong></a></p>
-        <p><strong>Disclaimer</strong>: Information collected from public platforms like Twitter, Reddit etc.</p>
+      <p>
+        Covid19 Lucknow Help -
+        <a href="https://twitter.com/w3Abhishek"
+          ><strong>@w3Abhishek</strong></a
+        >
+      </p>
+      <p>
+        <strong>Disclaimer</strong>: Information collected from public platforms
+        like Twitter, Reddit etc.
+      </p>
     </footer>
-</body>
+  </body>
 </html>

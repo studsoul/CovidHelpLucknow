@@ -1,116 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Covid19 Lucknow Help</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body onload="covid19data()">
-
-    <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header"><a class="navbar-brand" href="index.html">COVID19 HELP Lucknow</a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse navbar-menubuilder">
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="medicines.html">Medicines</a></li>
-                    <li class="nav-item"><a href="beds.html">Beds</a></li>
-                    <li class="nav-item"><a href="plasma.html">Plasma</a></li>
-                    <li class="nav-item"><a href="oxygen.html">Oxygen</a></li>
-                    <li class="nav-item"><a href="ambulance.html">Ambulance</a></li>
-                    <li class="nav-item"><a href="#">More</a></li>
-                </ul>
-            </div>
+  </head>
+  <body>
+    <div id="custom-bootstrap-menu" class="navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">COVID19 HELP Lucknow</a>
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-menubuilder"
+          >
+            <span class="sr-only">Toggle navigation</span
+            ><span class="icon-bar"></span><span class="icon-bar"></span
+            ><span class="icon-bar"></span>
+          </button>
         </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="medicines.html">Medicines</a></li>
+            <li class="nav-item"><a href="beds.html">Beds</a></li>
+            <li class="nav-item"><a href="plasma.html">Plasma</a></li>
+            <li class="nav-item"><a href="oxygen.html">Oxygen</a></li>
+            <li class="nav-item"><a href="ambulance.html">Ambulance</a></li>
+            <li class="nav-item"><a href="#">More</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- Navbar -->
-    
+
     <div class="main">
-        <div class="covid-data">
-            <div class="cv_data active_cases">
-                <h3>Active</h3>
-                <p id="active-cases">Loading...</p>
-            </div>
-            <div class="cv_data recovered_cases">
-                <h3>Recovered</h3>
-                <p id="recovered-cases">Loading...</p>
-            </div>
-            <div class="cv_data total_cases">
-                <h3>Total</h3>
-                <p id="total-cases">Loading...</p>
-            </div>
-            <div class="cv_data deceased_cases">
-                <h3>Deceased</h3>
-                <p id="deceased-cases">Loading...</p>
-            </div>
+      <div class="covid-data">
+        <div class="cv_data active_cases">
+          <h3>Active</h3>
+          <p id="active-cases">Loading...</p>
         </div>
+        <div class="cv_data recovered_cases">
+          <h3>Recovered</h3>
+          <p id="recovered-cases">Loading...</p>
+        </div>
+        <div class="cv_data total_cases">
+          <h3>Total</h3>
+          <p id="total-cases">Loading...</p>
+        </div>
+        <div class="cv_data deceased_cases">
+          <h3>Deceased</h3>
+          <p id="deceased-cases">Loading...</p>
+        </div>
+      </div>
     </div>
+
     <div class="helpline_tab">
-    <div class="hospitals">
+      <div class="hospitals">
+        <h3>Private COVID19 Hospitals</h3>
         <ul class="hospitals_list">
-            <h3>Private COVID19 Hospitals</h3>
-            <li>Advance Neuro and General Hospital - Dr Vinod Kumar - 9415022002</li>
-            <li>Avon Hospital - Khurram Atik Rehmani - 9450374007</li>
-            <li>Apollo Medics - Pramit Mishra - 8429029801</li>
-            <li>Career Institute of Medical Science and Hospital - Col. Dr. Mohammad Aizam-8318527150</li>
-            <li>Fehmina Hospital and Trauma Center Blood Bank - Salman Khalid - 9935672929</li>
-            <li>Green City Hospital- Dr Vineet Verma - 8400000784</li>
-            <li>Jaypee Hospital - RV Singh - 9554936222</li>
-            <li>King Medical Center- Dr. Abhay Singh - 9415328915</li>
-            <li>Maa Chandrika Devi Hospital - Gayatri Singh - 9415020266</li>
-            <li>Pooja Hospital and Multispeciality Center-Ashutosh Pandey-9670588871</li>
-            <li>Rajdhani Hospital - Chandra Prakash Dubey-9415162686</li>
-            <li>Sanjeevani Medical Center - Sunil Kumar Soni - 8840466030</li>
-            <li>Sri Sai Life Hospital - Yogesh Shukla - 9450407843</li>
-            <li>Vaga Hospital - Sandeep Dixit - 9839165078</li>
-            <li>Vinayak Medicare Hospital - Dr. Manish Chandra Singh - 9984735111</li>
-            <li>Vinayak Trauma Center and Hospital - Amit Nandan Mishra - 9919604383</li>
-            <p><a href="https://zeenews.india.com/india/17-private-hospitals-authorised-to-treat-covid-19-positive-patients-in-lucknow-check-list-here-2355398.html">Source</a></p>
+          <li>
+            Advance Neuro and General Hospital - Dr Vinod Kumar - 9415022002
+          </li>
+          <li>Avon Hospital - Khurram Atik Rehmani - 9450374007</li>
+          <li>Apollo Medics - Pramit Mishra - 8429029801</li>
+          <li>
+            Career Institute of Medical Science and Hospital - Col. Dr. Mohammad
+            Aizam-8318527150
+          </li>
+          <li>
+            Fehmina Hospital and Trauma Center Blood Bank - Salman Khalid -
+            9935672929
+          </li>
+          <li>Green City Hospital- Dr Vineet Verma - 8400000784</li>
+          <li>Jaypee Hospital - RV Singh - 9554936222</li>
+          <li>King Medical Center- Dr. Abhay Singh - 9415328915</li>
+          <li>Maa Chandrika Devi Hospital - Gayatri Singh - 9415020266</li>
+          <li>
+            Pooja Hospital and Multispeciality Center-Ashutosh Pandey-9670588871
+          </li>
+          <li>Rajdhani Hospital - Chandra Prakash Dubey-9415162686</li>
+          <li>Sanjeevani Medical Center - Sunil Kumar Soni - 8840466030</li>
+          <li>Sri Sai Life Hospital - Yogesh Shukla - 9450407843</li>
+          <li>Vaga Hospital - Sandeep Dixit - 9839165078</li>
+          <li>
+            Vinayak Medicare Hospital - Dr. Manish Chandra Singh - 9984735111
+          </li>
+          <li>
+            Vinayak Trauma Center and Hospital - Amit Nandan Mishra - 9919604383
+          </li>
+          <p>
+            <a
+              href="https://zeenews.india.com/india/17-private-hospitals-authorised-to-treat-covid-19-positive-patients-in-lucknow-check-list-here-2355398.html"
+              >Source</a
+            >
+          </p>
         </ul>
-    </div>
-    <div class="helpline">
-        <h3>COVID19 Helpline</h3>
+      </div>
+      <div class="helpline">
+        <h3 class="title">COVID19 Helpline</h3>
         <ul class="helpline_list">
-            <li>Centre: +91-11-23978046</li>
-            <li>Covid Patient/Ambulance Management (UPGOV) - 0522 - 4523001 / 0522 - 2610150</li>
-            <li>SGPGI - (Emergency: 0522-2494470, 2494660, 2494659, 2493993), (ICU: 0522-2495485/0522-2495486)</li>
-            <li>Plasma Sources - <a href="https://www.teamsosindia.in/">Team SOS India</a>, <a href="https://dhoondh.com/">Dhoondh</a>, <a href="https://plasmadonor.in">PlasmaDonor.in</a>, <a href="https://plasmaline.in/">PlasmaLine</a></li>
-            <li>U.P COVID Helpline - 18001805145</li>
-            <li>U.P. Ambulance - 108 / 102</li>
-            <li>D.M. Contact (Lucknow) - 9415005000, 0522-2623024 , 2625653</li>
-            </ul>
+          <li>Centre: +91-11-23978046</li>
+          <li>
+            Covid Patient/Ambulance Management (UPGOV) - 0522 - 4523001 / 0522 -
+            2610150
+          </li>
+          <li>
+            SGPGI - (Emergency: 0522-2494470, 2494660, 2494659, 2493993), (ICU:
+            0522-2495485/0522-2495486)
+          </li>
+          <li>
+            Plasma Sources -
+            <a href="https://www.teamsosindia.in/">Team SOS India</a>,
+            <a href="https://dhoondh.com/">Dhoondh</a>,
+            <a href="https://plasmadonor.in">PlasmaDonor.in</a>,
+            <a href="https://plasmaline.in/">PlasmaLine</a>
+          </li>
+          <li>U.P COVID Helpline - 18001805145</li>
+          <li>U.P. Ambulance - 108 / 102</li>
+          <li>D.M. Contact (Lucknow) - 9415005000, 0522-2623024 , 2625653</li>
+        </ul>
+      </div>
     </div>
-</div>
-    <footer style="text-align: center;">
-        <p>Covid19 Lucknow Help - <a href="https://twitter.com/w3Abhishek"><strong>@w3Abhishek</strong></a></p>
-        <p><strong>Disclaimer</strong>: Information collected from public platforms like Twitter, Reddit etc.</p>
+    <footer style="text-align: center">
+      <p>
+        Covid19 Lucknow Help -
+        <a href="https://twitter.com/w3Abhishek"
+          ><strong>@w3Abhishek</strong></a
+        >
+      </p>
+      <p>
+        <strong>Disclaimer</strong>: Information collected from public platforms
+        like Twitter, Reddit etc.
+      </p>
     </footer>
     <script>
-        $(document).ready(function (){
-            setInterval(fetchdata,1000);
-        })
-            function fetchdata(){
-            $.ajax({
-                url : "https://api.covid19india.org/state_district_wise.json",
-                type : "GET",
-                success: function (result){
-                    $("#active-cases").html(result['Uttar Pradesh']['districtData']['Lucknow'].active);
-                    $("#recovered-cases").html(result['Uttar Pradesh']['districtData']['Lucknow'].recovered);
-                    $("#total-cases").html(result['Uttar Pradesh']['districtData']['Lucknow'].confirmed);
-                    $("#deceased-cases").html(result['Uttar Pradesh']['districtData']['Lucknow'].deceased);
-                }
-            })
-        }
+      $(document).ready(function () {
+        setInterval(fetchdata, 1000);
+      });
+      function fetchdata() {
+        $.ajax({
+          url: "https://api.covid19india.org/state_district_wise.json",
+          type: "GET",
+          success: function (result) {
+            $("#active-cases").html(
+              result["Uttar Pradesh"]["districtData"][
+                "Lucknow"
+              ].active.toLocaleString()
+            );
+            $("#recovered-cases").html(
+              result["Uttar Pradesh"]["districtData"][
+                "Lucknow"
+              ].recovered.toLocaleString()
+            );
+            $("#total-cases").html(
+              result["Uttar Pradesh"]["districtData"][
+                "Lucknow"
+              ].confirmed.toLocaleString()
+            );
+            $("#deceased-cases").html(
+              result["Uttar Pradesh"]["districtData"][
+                "Lucknow"
+              ].deceased.toLocaleString()
+            );
+          },
+        });
+      }
     </script>
-</body>
+  </body>
 </html>

@@ -1,87 +1,124 @@
-menu ul{
-    text-decoration: none;
-    list-style-type: none;
-    display:inline;
-    margin: auto;
+menu ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline;
+  margin: auto;
 }
-menu ul li{
-    padding:1em;
-    display:inline-block;
-    font-size:1.1em;
-    font-family: sans-serif;
+menu ul li {
+  padding: 1em;
+  display: inline-block;
+  font-size: 1.1em;
+  font-family: sans-serif;
 }
-.header .logo{
-    text-align:center;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1.5em;
-    font-weight: 900;
+.header .logo {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  font-weight: 900;
 }
 .main .covid-data {
-    padding:2em;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
+  padding: 2em;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.cv_data{
-    padding:1.2em;
-    margin:0.9em;
-    border-radius: 5%;
-    color:#ff9090;
-    font-family: sans-serif;
-    width:10em;
+.cv_data {
+  padding: 1.2em;
+  margin: 0.9em;
+  border-radius: 5%;
+  font-family: sans-serif;
+  width: 10em;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.15);
 }
-.covid-data .active_cases{
-    background-color: red;
-    color:#fff4f4;
-}
-.covid-data .total_cases{
-    background-color: blue;
-    color: rgb(138, 252, 246);
-}
-.covid-data .recovered_cases{
-    background-color: green;
-    color:rgb(194, 250, 194);
-}
-.covid-data .deceased_cases{
-    background-color: gray;
-    color:#f4f4f4;
-}
-@media screen and (max-width: 990px) {
-.main .covid-data {
-    padding:2em;
-    background-color: #f4f4f4;
-    display: block;
-    text-align:center;
-}
-.cv_data{
-    padding:1.2em;
-    margin:0.9em;
-    border-radius: 5%;
-    color:#ff9090;
-    font-family: sans-serif;
-    width:10em;
-    text-align:center;
-}
-    .helpline_tab{
-    display: block;
-}
-.help{padding:2.5em;}
-}
-footer{
-    text-align: center;
-}
-footer p{font-family: sans-serif; font-size: 1.2em;}
-.hospitals_list{
-    font-size: 1.5rem;
-padding-right:3.5em;
-}
- .helpline{
-    font-size: 1.5rem;
-padding-right:3.5em;
-}
-.helpline_tab{
-    display: flex;
-}
-.help{padding:2.5em;}
 
-.cv_data h3{font-size: 1.5em;}
+.covid-data .active_cases {
+  background-color: rgb(252, 39, 39);
+  color: #ffffff;
+}
+.covid-data .total_cases {
+  background-color: rgb(31, 132, 248);
+  color: rgb(255, 255, 255);
+}
+.covid-data .recovered_cases {
+  background-color: rgb(18, 172, 18);
+  color: rgb(255, 255, 255);
+}
+.covid-data .deceased_cases {
+  background-color: gray;
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+.hospitals_list {
+  font-size: 1.5rem;
+  padding-right: 3.5em;
+}
+.helpline {
+  font-size: 1.5rem;
+  padding-right: 3.5em;
+}
+.helpline_tab {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.help {
+  padding: 2.5em;
+}
+
+.cv_data h3 {
+  font-size: 1.5em;
+}
+
+/* Hospital Cards
+.hospital_contact {
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+.hospital {
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.15);
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: white;
+  margin: 8px;
+}
+.hospital h4,
+.contact,
+.hospital .doctor {
+  font-weight: 600;
+} */
+
+@media screen and (max-width: 990px) {
+  .main .covid-data {
+    padding: 2em;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  .cv_data {
+    padding: 1.2em;
+    margin: 0.9em;
+    border-radius: 5%;
+    color: #ff9090;
+    font-family: sans-serif;
+    width: 10em;
+    text-align: center;
+  }
+  .helpline_tab {
+    flex-direction: column;
+  }
+  .help {
+    padding: 2.5em;
+  }
+}
