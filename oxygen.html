@@ -1,217 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Covid19 Lucknow Help</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body onload="covid19data()">
-    <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header"><a class="navbar-brand" href="index.html">COVID19 HELP Lucknow</a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse navbar-menubuilder">
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="medicines.html">Medicines</a></li>
-                    <li class="nav-item"><a href="beds.html">Beds</a></li>
-                    <li class="nav-item"><a href="plasma.html">Plasma</a></li>
-                    <li class="nav-item"><a href="oxygen.html">Oxygen</a></li>
-                    <li class="nav-item"><a href="ambulance.html">Ambulance</a></li>
-                    <li class="nav-item"><a href="#">More</a></li>
-                </ul>
-            </div>
+  </head>
+  <body onload="covid19data()">
+    <div id="custom-bootstrap-menu" class="navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">COVID19 HELP Lucknow</a>
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-menubuilder"
+          >
+            <span class="sr-only">Toggle navigation</span
+            ><span class="icon-bar"></span><span class="icon-bar"></span
+            ><span class="icon-bar"></span>
+          </button>
         </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="medicines.html">Medicines</a></li>
+            <li class="nav-item"><a href="beds.html">Beds</a></li>
+            <li class="nav-item"><a href="plasma.html">Plasma</a></li>
+            <li class="nav-item"><a href="oxygen.html">Oxygen</a></li>
+            <li class="nav-item"><a href="ambulance.html">Ambulance</a></li>
+            <li class="nav-item"><a href="#">More</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- Navbar -->
     <div class="main">
-        <div class="covid-data">
-     <h2>Oxygen Cylinders</h2>
-    </div>
+      <div class="covid-data">
+        <h2>Oxygen Cylinders</h2>
+      </div>
     </div>
     <div class="help">
-        <div class="form-group">
-            <input class="form-control input-lg" type="text" placeholder="Search for your Location" id="search_term" onkeyup="covidhelp()">
-          </div>
-        <div class="table-responsive">
-        <table style="border-collapse: collapse; width: 100%;" border="1">
+      <div class="form-group">
+        <input
+          class="form-control input-lg"
+          type="text"
+          placeholder="Search for your Location"
+          id="search_term"
+          onkeyup="covidhelp()"
+        />
+      </div>
+      <div class="table-responsive">
+        <table style="border-collapse: collapse; width: 100%" border="1">
+          <tbody>
+            <tr></tr>
+          </tbody>
+        </table>
+        <div class="table-condensed">
+          <p>
+            Note: I haven't got the time to verify these numbers, and these are
+            picked from social media. Please beware while dealing and do not pay
+            online without visiting them.
+          </p>
+          <table class="table table-bordered table-condensed" id="covidhelp">
             <tbody>
-            <tr>
-            </tbody></table>
-            <div class="table-condensed">
-                <p>Note: I haven't got the time to verify these numbers, and these are picked from social media. Please beware while dealing and do not pay online without visiting them.</p>
-                <table class="table table-bordered table-condensed" id="covidhelp">
-                    <tbody>
-                        <tr style="height: 17px;">
-                            <td style="height: 17px; width: 204.8px;">Kesarwani Medicals</td>
-                            <td style="height: 17px; width: 182.4px;">895061446</td>
-                            <td style="height: 17px; width: 155.2px;">Additional Info</td>
-                            </tr>
-                            <tr style="height: 17px;">
-                            <td style="height: 17px; width: 204.8px;">Gokul Agency</td>
-                            <td style="height: 17px; width: 182.4px;">9919620977</td>
-                            <td style="height: 17px; width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr style="height: 34px;">
-                            <td style="height: 34px; width: 204.8px;">Atul Oxygen &amp; Ventilator at Home</td>
-                            <td style="height: 34px; width: 182.4px;">9151590454</td>
-                            <td style="height: 34px; width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr style="height: 17px;">
-                            <td style="height: 17px; width: 204.8px;">Oxygen Cans</td>
-                            <td style="height: 17px; width: 182.4px;">9044497779</td>
-                            <td style="height: 17px; width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr style="height: 52px;">
-                            <td style="height: 52px; width: 204.8px;">MurariGas (Nadar Ganj, Near the Fire Station)</td>
-                            <td style="height: 52px; width: 182.4px;">8423536037, 9235302425, 7311100000</td>
-                            <td style="height: 52px; width: 155.2px;">Go and buy if contact not available</td>
-                            </tr>
-                            <tr style="height: 17px;">
-                            <td style="height: 17px; width: 204.8px;">Rudransh Arora (Aliganj)</td>
-                            <td style="height: 17px; width: 182.4px;">9559694440</td>
-                            <td style="height: 17px; width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr style="height: 34px;">
-                            <td style="height: 34px; width: 204.8px;">Shubham Oxygen For Refilling/Rent</td>
-                            <td style="height: 34px; width: 182.4px;">9415548499</td>
-                            <td style="height: 34px; width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                            <td style="width: 204.8px;">Sujeet oxygen</td>
-                            <td style="width: 182.4px;">8737026009, 8756400408, 7905636611</td>
-                            <td style="width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 204.8px;">Aayush</td>
-                                <td style="width: 182.4px;">9899509939</td>
-                                <td style="width: 155.2px;">WhatsApp only</td>
-                                </tr>
-                                <tr>
-                                <td style="width: 204.8px;">Akshat</td>
-                                <td style="width: 182.4px;">9935277700</td>
-                                <td style="width: 155.2px;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                <td style="width: 204.8px;">Mahanagar</td>
-                                <td style="width: 182.4px;">9559694440</td>
-                                <td style="width: 155.2px;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                <td style="width: 204.8px;">Bhootnath Market</td>
-                                <td style="width: 182.4px;">9335900512</td>
-                                <td style="width: 155.2px;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                <td style="width: 204.8px;">Aman Oxygen</td>
-                                <td style="width: 182.4px;">9984786786</td>
-                                <td style="width: 155.2px;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                <td style="width: 204.8px;">Parerhat Gas (Sarojini Nagar)</td>
-                                <td style="width: 182.4px;">9654258981, 9936232900</td>
-                                <td style="width: 155.2px;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                <td style="width: 204.8px;">Vent on Rent</td>
-                                <td style="width: 182.4px;">7080806920</td>
-                                <td style="width: 155.2px;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                <td style="width: 204.8px;">Raghav Oudh Oxygen</td>
-                                <td style="width: 182.4px;">9616661656</td>
-                                <td style="width: 155.2px;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                <td style="width: 204.8px;">Oxygen Wala&nbsp;</td>
-                                <td style="width: 182.4px;">8935090720</td>
-                                <td style="width: 155.2px;">&nbsp;</td>
-                                </tr>
-                            <tr>
-                            <td style="width: 204.8px;">Star Gas Agency (Chowk and Sadar)</td>
-                            <td style="width: 182.4px;">9935580628, 9621942015</td>
-                            <td style="width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                            <td style="width: 204.8px;">Jagat Gas (Kanpur Road)</td>
-                            <td style="width: 182.4px;">9807945297, 8127959296</td>
-                            <td style="width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                            <td style="width: 204.8px;">Tanmay Bansal</td>
-                            <td style="width: 182.4px;">8318617874</td>
-                            <td style="width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                            <td style="width: 204.8px;">Sai Traders (Aliganj)</td>
-                            <td style="width: 182.4px;">9304084300</td>
-                            <td style="width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                            <td style="width: 204.8px;">Pratham Enterprises (Nishatganj)</td>
-                            <td style="width: 182.4px;">7235807158</td>
-                            <td style="width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                            <td style="width: 204.8px;">Vasu Gupta Sachdeva (Lalbagh)</td>
-                            <td style="width: 182.4px;">9044430691</td>
-                            <td style="width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                            <td style="width: 204.8px;">Salim (Chowk)</td>
-                            <td style="width: 182.4px;">8429271920</td>
-                            <td style="width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                            <td style="width: 204.8px;">Kaushal Katiyar (Alambagh)</td>
-                            <td style="width: 182.4px;">9919192260</td>
-                            <td style="width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                            <td style="width: 204.8px;">Avadh Oxygen (Nadarganj)</td>
-                            <td style="width: 182.4px;">7947353362</td>
-                            <td style="width: 155.2px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                            <td style="width: 204.8px;">Jumbo Jet Oxygen</td>
-                            <td style="width: 182.4px;">8960155550, 8090067876</td>
-                            <td style="width: 155.2px;">Prebooking Required</td>
-                            </tr>
-                            
-                    </tbody>
-                </table></div></div>                
+              <tr style="height: 17px">
+                <td style="height: 17px; width: 204.8px">Kesarwani Medicals</td>
+                <td style="height: 17px; width: 182.4px">895061446</td>
+                <td style="height: 17px; width: 155.2px">Additional Info</td>
+              </tr>
+              <tr style="height: 17px">
+                <td style="height: 17px; width: 204.8px">Gokul Agency</td>
+                <td style="height: 17px; width: 182.4px">9919620977</td>
+                <td style="height: 17px; width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr style="height: 34px">
+                <td style="height: 34px; width: 204.8px">
+                  Atul Oxygen &amp; Ventilator at Home
+                </td>
+                <td style="height: 34px; width: 182.4px">9151590454</td>
+                <td style="height: 34px; width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr style="height: 17px">
+                <td style="height: 17px; width: 204.8px">Oxygen Cans</td>
+                <td style="height: 17px; width: 182.4px">9044497779</td>
+                <td style="height: 17px; width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr style="height: 52px">
+                <td style="height: 52px; width: 204.8px">
+                  MurariGas (Nadar Ganj, Near the Fire Station)
+                </td>
+                <td style="height: 52px; width: 182.4px">
+                  8423536037, 9235302425, 7311100000
+                </td>
+                <td style="height: 52px; width: 155.2px">
+                  Go and buy if contact not available
+                </td>
+              </tr>
+              <tr style="height: 17px">
+                <td style="height: 17px; width: 204.8px">
+                  Rudransh Arora (Aliganj)
+                </td>
+                <td style="height: 17px; width: 182.4px">9559694440</td>
+                <td style="height: 17px; width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr style="height: 34px">
+                <td style="height: 34px; width: 204.8px">
+                  Shubham Oxygen For Refilling/Rent
+                </td>
+                <td style="height: 34px; width: 182.4px">9415548499</td>
+                <td style="height: 34px; width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Sujeet oxygen</td>
+                <td style="width: 182.4px">
+                  8737026009, 8756400408, 7905636611
+                </td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Aayush</td>
+                <td style="width: 182.4px">9899509939</td>
+                <td style="width: 155.2px">WhatsApp only</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Akshat</td>
+                <td style="width: 182.4px">9935277700</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Mahanagar</td>
+                <td style="width: 182.4px">9559694440</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Bhootnath Market</td>
+                <td style="width: 182.4px">9335900512</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Aman Oxygen</td>
+                <td style="width: 182.4px">9984786786</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Parerhat Gas (Sarojini Nagar)</td>
+                <td style="width: 182.4px">9654258981, 9936232900</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Vent on Rent</td>
+                <td style="width: 182.4px">7080806920</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Raghav Oudh Oxygen</td>
+                <td style="width: 182.4px">9616661656</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Oxygen Wala&nbsp;</td>
+                <td style="width: 182.4px">8935090720</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">
+                  Star Gas Agency (Chowk and Sadar)
+                </td>
+                <td style="width: 182.4px">9935580628, 9621942015</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Jagat Gas (Kanpur Road)</td>
+                <td style="width: 182.4px">9807945297, 8127959296</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Tanmay Bansal</td>
+                <td style="width: 182.4px">8318617874</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Sai Traders (Aliganj)</td>
+                <td style="width: 182.4px">9304084300</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Pratham Enterprises (Nishatganj)</td>
+                <td style="width: 182.4px">7235807158</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Vasu Gupta Sachdeva (Lalbagh)</td>
+                <td style="width: 182.4px">9044430691</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Salim (Chowk)</td>
+                <td style="width: 182.4px">8429271920</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Kaushal Katiyar (Alambagh)</td>
+                <td style="width: 182.4px">9919192260</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Avadh Oxygen (Nadarganj)</td>
+                <td style="width: 182.4px">7947353362</td>
+                <td style="width: 155.2px">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 204.8px">Jumbo Jet Oxygen</td>
+                <td style="width: 182.4px">8960155550, 8090067876</td>
+                <td style="width: 155.2px">Prebooking Required</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
     <footer>
-        <p>Covid19 Lucknow Help - <a href="https://twitter.com/w3Abhishek"><strong>@w3Abhishek</strong></a></p>
-        <p><strong>Disclaimer</strong>: Information collected from public platforms like Twitter, Reddit etc.</p>
+      <p>
+        Covid19 Lucknow Help -
+        <a href="https://twitter.com/w3Abhishek"
+          ><strong>@w3Abhishek</strong></a
+        >
+      </p>
+      <p>
+        <strong>Disclaimer</strong>: Information collected from public platforms
+        like Twitter, Reddit etc.
+      </p>
     </footer>
     <script>
-        function covidhelp() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("search_term");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("covidhelp");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[0];
-      if (td) {
-        txtValue = td.textContent || td.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
+      function covidhelp() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("search_term");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("covidhelp");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
         }
-      }      
-    }
-  }
+      }
     </script>
-</body>
+  </body>
 </html>
